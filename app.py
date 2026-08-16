@@ -34,16 +34,16 @@ uploaded_file = st.file_uploader("Upload test data (CSV)", type=["csv"])
 
 if uploaded_file is not None:
     data = pd.read_csv(uploaded_file)
-    st.write("Preview of uploaded data:")
-    st.dataframe(data.head())
+    #st.write("Preview of uploaded data:")
+    #st.dataframe(data.head())
 
     # Load the selected model and the scaler
     model = joblib.load(model_options[selected_model_name])
     scaler = joblib.load("model/scaler.pkl")
 
     st.success(f"Loaded model: {selected_model_name}")
-    st.write(f"Uploaded data shape: {data.shape}")
-
+    #st.write(f"Uploaded data shape: {data.shape}")
+    st.caption(f"Loaded {data.shape[0]} rows × {data.shape[1]} columns — columns: {', '.join(data.columns)}")
 
     # ------------------------------------------------------------
     # Separate target from features
