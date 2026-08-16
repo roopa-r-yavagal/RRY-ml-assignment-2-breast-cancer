@@ -109,7 +109,7 @@ if uploaded_file is not None:
     results_df = data.copy()
     results_df["Predicted"] = y_pred
     results_df["Predicted Probability (Malignant)"] = y_proba
-    st.dataframe(results_df.head(20))
+    st.dataframe(results_df)
 
 else:
     st.info("Please upload a CSV file to continue.")
