@@ -6,7 +6,7 @@ import joblib
 # STAGE 1: App skeleton — upload CSV + select a model
 # ============================================================
 
-st.set_page_config(page_title="Breast Cancer Classifier", layout="centered")
+st.set_page_config(page_title="Breast Cancer Classifier", layout="wide")
 
 st.title("Breast Cancer Classification — Model Demo")
 st.write(
