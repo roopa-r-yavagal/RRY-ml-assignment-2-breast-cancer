@@ -64,7 +64,7 @@ is generally more costly than a false alarm (false positive).
 
 ## e. Streamlit App
 
-[Live App](https://rry-ml-assignment-2-breast-cancer-aix7yieippt2gd6k6k2os8)
+[Streamlit application link] https://rry-ml-assignment-2-breast-cancer-aix7yieippt2gd6k6k2os8.streamlit.app/
 
 ## f. Screenshot
 
