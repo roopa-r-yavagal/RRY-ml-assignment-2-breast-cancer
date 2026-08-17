@@ -72,4 +72,19 @@ is generally more costly than a false alarm (false positive).
 
 ![Run Streamlit app ](images/BITS_VM_1.png)
 
+![Run Streamlit app ](images/BITS_VM_2.png)
 
+### Logistic Regression
+![Logistic Regression](images/Model-demo-Linear-regression.png)
+
+### Decision Tree
+![Decision Tree](images/Model-demo-DEcision-tree.png)
+
+### kNN
+![kNN](images/Model-demo-kNN)
+
+### Naive Bayes
+![Naive Bayes](images/Model-demo-Naive-Bayes.png)
+
+### Random Forest
+![Random Forest](images/Model-demo-Random-Forest.png)
