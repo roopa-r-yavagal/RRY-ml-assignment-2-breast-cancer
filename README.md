@@ -70,9 +70,9 @@ is generally more costly than a false alarm (false positive).
 
 ### Run streamlit
 
-![Run Streamlit app ](images/BITS_VM_1.png)
-
 ![Run Streamlit app ](images/BITS_VM_2.png)
+
+![Run Streamlit app ](images/BITS_VM_1.png)
 
 ### Logistic Regression
 ![Logistic Regression](images/Model-demo-Linear-regression.png)
