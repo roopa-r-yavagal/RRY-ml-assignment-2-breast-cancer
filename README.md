@@ -68,7 +68,9 @@ scikit-learn's default encoding maps 0 = malignant, 1 = benign. For this assignm
 | kNN | Has Accuracy 0.956, MCC 0.906, very close to Logistic Regression. Since kNN uses distance calculations between points, we have used scaling (StandardScaler) on the data set to ensure that the distances are comparable  |
 | Naive Bayes | Lowest recall (0.857) — missed 6 malignant cases (6 false negatives), this is a genuine concern for a diagnostic use case. This data set has features that are closly related (e.g. radius, perimeter, area), the independence assumption (treating all 30 features as uncorrelated) is the most likely cause of this poor performance.Its AUC (0.989) is still high — so it ranks cases well in terms of relative risk, but its default 0.5 decision threshold is not the correct choice for this data. |
 | Random Forest (Ensemble) | Highest overall performance (Accuracy 0.974, MCC 0.944, perfect precision of 1.0 — zero false positives). As an ensemble, it reduces the variance/overfitting problem seen in the single Decision Tree by averaging predictions across many trees, each trained on a sample of the data with a random subset of features considered at each split. This cancels out noise while reinforcing genuine signal. |
-| **Overall ** | **Random Forest** — highest accuracy, highest MCC, highest precision, and recall among the models. Its 100% precision (no false positives) and strong recall (0.929, missing only 3 of 42 malignant test cases) makes it the most reliable model for this dataset. |
+
+## Overall
+Random Forest — highest accuracy, highest MCC, highest precision, and recall among the models. Its 100% precision (no false positives) and strong recall (0.929, missing only 3 of 42 malignant test cases) makes it the most reliable model for this dataset.
 
 ## General observation about the high accuracy of all the models
 It is to be notes that all five models achieved consistently high performance (Accuracy: 0.92–0.97, MCC: 0.83–0.94) across fundamentally different algorithm types — linear (Logistic Regression), distance-based (kNN), tree-based (Decision Tree), probabilistic (Naive Bayes), and ensemble (Random Forest). 
