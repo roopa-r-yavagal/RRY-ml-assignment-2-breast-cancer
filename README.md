@@ -81,7 +81,7 @@ is generally more costly than a false alarm (false positive).
 ![Decision Tree](images/Model-demo-DEcision-tree.png)
 
 ### kNN
-![kNN](images/Model-demo-kNN)
+![kNN](images/Model-demo-kNN.png)
 
 ### Naive Bayes
 ![Naive Bayes](images/Model-demo-Naive-Bayes.png)
