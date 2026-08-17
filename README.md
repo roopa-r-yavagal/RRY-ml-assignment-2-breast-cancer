@@ -68,4 +68,8 @@ is generally more costly than a false alarm (false positive).
 
 ## f. Screenshot
 
-[TO BE ADDED — BITS Virtual Lab execution proof]
+### Run streamlit
+
+![Run Streamlit app ](images/BITS_VM_1.png)
+
+
