@@ -100,37 +100,8 @@ if uploaded_file is not None:
         index=["Actual: Benign (0)", "Actual: Malignant (1)"],
         columns=["Predicted: Benign (0)", "Predicted: Malignant (1)"]
     )
-    # st.dataframe(cm_df)
-    import matplotlib.pyplot as plt
-    import seaborn as sns
-
-    # ============================================================
-    # confusion matrix table display 
-    # ============================================================
-
-    # cm = confusion_matrix(y_true, y_pred)   <- you already compute this
-
-    fig, ax = plt.subplots(figsize=(5, 4))
-    sns.heatmap(
-        cm,
-        annot=True,          # show the numbers in each cell
-        fmt="d",              # display as integers, not decimals
-        cmap="Blues",          # solid color scale, good contrast either way
-        cbar=False,
-        xticklabels=["Predicted: Benign (0)", "Predicted: Malignant (1)"],
-        yticklabels=["Actual: Benign (0)", "Actual: Malignant (1)"],
-        annot_kws={"size": 14, "weight": "bold"},   # large, bold numbers
-        linewidths=1,
-        linecolor="white",
-    )
-    ax.set_xlabel("")
-    ax.set_ylabel("")
-    plt.xticks(rotation=0)
-    plt.yticks(rotation=0)
-    plt.tight_layout()
-
-    st.pyplot(fig)
-
+    st.dataframe(cm_df)
+   
     # ------------------------------------------------------------
     # Predictions table
     # ------------------------------------------------------------
