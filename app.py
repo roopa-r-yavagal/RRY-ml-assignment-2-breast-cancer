@@ -8,7 +8,7 @@ import joblib
 
 st.set_page_config(page_title="Breast Cancer Classifier", layout="wide")
 
-st.title("Breast Cancer Classification")
+st.title("Breast Cancer Classification - Model Demo")
 st.write(
     "Upload test data (CSV) and select a model to see its predictions "
     "and performance on the uploaded data."
